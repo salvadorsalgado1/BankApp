@@ -31,3 +31,8 @@
     transform: rotate(360deg);
   }
 }
+.jumbotron
+{
+background-color:gray;
+background-size:10v
+}

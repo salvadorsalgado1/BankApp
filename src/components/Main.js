@@ -18,7 +18,16 @@ function Main()
 {
     return(
         <div className = "Main">
-            <Buttons/>
+         
+            <Container>
+                <Row>
+                    <Col>
+                    <Buttons/>
+                    <Jumbotron/>
+                    </Col>
+                </Row>
+            </Container>
+           
     
 
         </div>
