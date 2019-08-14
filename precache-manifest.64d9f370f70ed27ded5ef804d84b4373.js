@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bb7cade7f1e7d83321a7dbdf8e08aaea",
+    "revision": "a57ec85fc799c56a52805d40dae8d614",
     "url": "/BankApp/index.html"
   },
   {
-    "revision": "bfd87ac70e673d074e36",
+    "revision": "7236d2d30852a4179853",
     "url": "/BankApp/static/css/2.22a7d4ef.chunk.css"
   },
   {
-    "revision": "1034f993b8f6c27a2cce",
+    "revision": "8f7b8ecb17d7c91ac56c",
     "url": "/BankApp/static/css/main.f7e38e06.chunk.css"
   },
   {
-    "revision": "bfd87ac70e673d074e36",
-    "url": "/BankApp/static/js/2.cd887b71.chunk.js"
+    "revision": "7236d2d30852a4179853",
+    "url": "/BankApp/static/js/2.ba7fab8f.chunk.js"
   },
   {
-    "revision": "1034f993b8f6c27a2cce",
-    "url": "/BankApp/static/js/main.052cd43c.chunk.js"
+    "revision": "8f7b8ecb17d7c91ac56c",
+    "url": "/BankApp/static/js/main.35587d65.chunk.js"
   },
   {
     "revision": "58337c8119e2dcade76b",
