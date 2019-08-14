@@ -5,15 +5,12 @@ import {Form, FormGroup, FormLabel, InputGroup, FormControl,
 
 } from 'react-bootstrap';
 
-
-
-
 import { generateKeyPair } from 'crypto';
 import logo from '../images/logo.png';
 
 const cardContainer = {
 
-width:"35vw",
+width:"40vw",
 paddingTop:"2vh"
 
 
