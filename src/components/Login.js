@@ -10,7 +10,8 @@ import logo from '../images/logo.png';
 
 const cardContainer = {
 
-width:"100rem",
+width:"70vw",
+height:"40vh",
 paddingTop:"2vh"
 
 
