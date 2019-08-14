@@ -7,12 +7,14 @@ import Keypad from './components/Keypad';
 import Profile from './components/Profile';
 import Header from './components/Header';
 import NavbarPage from './components/NavbarPage';
+import Login from './components/Login';
+
 function App() {
   return (
     <div className="App">
-      <NavbarPage/>
-      <Header/>
-      <Main/>
+    <NavbarPage/>
+     
+    <Login/>
       
     </div>
   );

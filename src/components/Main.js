@@ -11,22 +11,34 @@ import {
     Jumbotron
     
 }
+
  from 'react-bootstrap';
-import Buttons from './Buttons'
+import Buttons from './Buttons';
+import JumboTron from './JumboTron';
+
+const topPadding = {
+    height:"50vh"
+}
 
 function Main()
 {
     return(
         <div className = "Main">
          
-            <Container>
-                <Row>
-                    <Col>
+        <Container fluid>
+            <Row  fluid className = "justify-content-center align-items-center">
+
+                <Col className = "align-items-center" xsm = "12" sm = "auto" md = "auto" lg = "auto">
+                    <JumboTron/>
+                </Col>
+
+                <Col className = "align-items-center" xsm = "12" sm = "auto" md = "auto" lg = "auto">
                     <Buttons/>
-                    <Jumbotron/>
-                    </Col>
-                </Row>
-            </Container>
+                  
+                </Col>
+                   
+            </Row>
+        </Container>
            
     
 

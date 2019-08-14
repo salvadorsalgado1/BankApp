@@ -4,7 +4,7 @@ import {Navbar, NavbarBrand} from 'react-bootstrap';
 function NavbarPage() {
     return(
 <div className = "NavbarPage">
-        <Navbar bg = "light" variant = "light">
+        <Navbar fixed-top bg = "light" variant = "light">
           <NavbarBrand >
             Welcome to the page!
           </NavbarBrand>

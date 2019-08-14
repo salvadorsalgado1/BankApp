@@ -3,7 +3,7 @@ import {Buttons, Image} from 'react-bootstrap';
 import profileImage from '../images/profilepicture.png';
 
 const ImageSize = {
-    height:"20vh",
+    height:"15vh",
     width:"auto"
 }
 function Profile(){
