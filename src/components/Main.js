@@ -17,22 +17,38 @@ import Buttons from './Buttons';
 import JumboTron from './JumboTron';
 
 const topPadding = {
-    height:"50vh"
+    paddingTop:"5vh",
+    height:"50%",
+    width:"auto"
+
 }
 
+const alignflex = {
+    display:"flex",
+    justifyContent:"center",
+    alignItems:"center",
+    flex:"1"
+}
+const containerflex = {
+   
+    display:"flex",
+    justifyContent:"center",
+    alignItems:"center",
+    flex:"1"
+}
 function Main()
 {
     return(
         <div className = "Main">
          
-        <Container fluid>
-            <Row  fluid className = "justify-content-center align-items-center">
+        <Container>
+            <Row>
 
-                <Col className = "align-items-center" xsm = "12" sm = "auto" md = "auto" lg = "auto">
+                <Col style = {topPadding} xsm = "12" sm = "12" md = "12" lg = "6">
                     <JumboTron/>
                 </Col>
 
-                <Col className = "align-items-center" xsm = "12" sm = "auto" md = "auto" lg = "auto">
+                <Col style = {alignflex} xsm = "12" sm = "12" md = "12" lg = "6">
                     <Buttons/>
                   
                 </Col>

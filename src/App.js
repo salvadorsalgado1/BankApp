@@ -8,12 +8,24 @@ import Profile from './components/Profile';
 import Header from './components/Header';
 import NavbarPage from './components/NavbarPage';
 import Login from './components/Login';
+import Balance from './components/Balance';
+
+
+
+
+
+
+
 
 function App() {
   return (
     <div className="App">
        
-<h1>salvador</h1>
+          {/*<Login/>*/}
+      
+
+      <Balance />
+
       
     </div>
   );

@@ -1,39 +1,53 @@
 import React from "react";
-import {Button, ButtonGroup, Col, Row, Container, Badge} from 'react-bootstrap';
+import {Button, ButtonGroup, Col, Row, Container, Badge, Jumbotron} from 'react-bootstrap';
+import JumboTron from "./JumboTron";
 const ButtonSizeStyle = {
     height : "10vh",
     width:"20vw",
+    display:"flex",
+    justifyContent:"center",
     
-    justifyContent:"center"
+    alignItems:"center",
+    flexWrap:"wrap",
+   flex:"1"
 }
+
 
 function Buttons() {
     return(
         <div className = "Buttons">
-            <Container >
-             <Row>
-             <ButtonGroup fluid aria-label= "First group" md>
-                 <Button style = {ButtonSizeStyle} variant = "primary">Checking</Button>
-                 <Button style = {ButtonSizeStyle} variant = "secondary">Savings</Button>
-                 <Button style = {ButtonSizeStyle} variant = "dark">Credit</Button>
-             </ButtonGroup>
-             </Row>
-         <Row>
-         <ButtonGroup fluid aria-label = "Second group" md>
+            <Jumbotron>
+                <Container >
+                    <Row>
+                    
+                        <Button style = {ButtonSizeStyle} variant = "primary">Checking</Button>
+                        <Button style = {ButtonSizeStyle} variant = "secondary">Savings</Button>
+                        
+                    
+                    </Row>
+                    <Row>
+                        
+                            <Button style = {ButtonSizeStyle} variant = "success">Notifications&nbsp;<Badge variant = "dark">3</Badge></Button>
+                            <Button style = {ButtonSizeStyle} variant = "secondary">Bill Pay</Button>
+                        
+                        
+                    </Row>
+                    <Row>
+                    
+                                <Button style = {ButtonSizeStyle} variant = "success">Notifications&nbsp;<Badge variant = "dark">3</Badge></Button>
+                                <Button style = {ButtonSizeStyle} variant = "secondary">Bill Pay</Button>
+                                
+                
+                    </Row>
+                
+
             
-            <Button style = {ButtonSizeStyle} variant = "success">Notifications<Badge variant = "dark">3</Badge></Button>
-            <Button style = {ButtonSizeStyle} variant = "secondary">Bill Pay</Button>
-                <Button style = {ButtonSizeStyle} variant = "secondary">Sign Out</Button>
-            </ButtonGroup>
-         </Row>
+            
 
-          
-
-           
-         
-
-         
-         </Container>
+            
+                </Container>
+            </Jumbotron>
+                
 
 
         </div>

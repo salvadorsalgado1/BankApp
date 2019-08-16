@@ -5,22 +5,34 @@ import Profile from './Profile';
 
 
 let checkingAmt = 3;
+const containerflex = {
+    display:"flex",
+    justifyContent:"center",
+    
+    alignItems:"center",
+    flexWrap:"wrap",
+   flex:"1"
+}
 
-
+const JumboTronContainer = {
+  backgroundColor:"black"
+}
 
 
 
 function JumboTron(){
     return(
         <div className = "Jumbotron" light>
+            
+            <div className = "d-flex justify-content-center">
             <Jumbotron>
-            <Container>
+                <Container >
                 <Profile/>
                         <h1>Welcome Back Salvador!</h1>
                         <br></br>
                         <h4>Tell us what would you like to do?</h4>
 
-             </Container>
+          
 
 
             <ListGroup>
@@ -34,9 +46,12 @@ function JumboTron(){
                     Credit Card: &nbsp;$
                 </ListGroupItem>
             </ListGroup>
-
-
+            </Container>
             </Jumbotron>
+                </div>
+            
+
+            
           
         </div>
     );

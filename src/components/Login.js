@@ -5,19 +5,22 @@ import {Form, FormGroup, FormLabel, InputGroup, FormControl,
 
 } from 'react-bootstrap';
 
-import { generateKeyPair } from 'crypto';
-import logo from '../images/logo.png';
 
+import logo from '../images/logo.png';
+/*
 const cardContainer = {
 
-width:"70vw",
-height:"40vh",
-paddingTop:"2vh"
+ width:"24rem",
+ 
+ marginBottom:"10px",
+ 
+  paddingTop:"10px"
 
 
 }
 const textColor = {
-    color:"gray"
+    color:"gray",
+    fontSize:"1rem"
    
 }
 const backgroundCard = {
@@ -30,15 +33,62 @@ const marginImage = {
 }
 const spacingTab = {
     marginBottom:"10px"
-}
+} */
+
+
+
+const cardContainer = {
+
+    width:"24rem",
+    
+    marginBottom:"10px",
+    
+     paddingTop:"10px",
+     justifyContent:"center",
+     display:"flex",
+     flexDirection:"column",
+     alignItems:"center",
+     flex:"1"
+   
+   
+   }
+   const textColor = {
+       color:"gray",
+       fontSize:"1rem"
+      
+   }
+   const backgroundCard = {
+       opacity:".9",
+       boxShadow:"5px 5px 5px 5px",
+       justifyContent:"center",
+       display:"flex",
+       flexDirection:"column",
+       alignItems:"center",
+       flex:"1"
+      
+   }
+   const marginImage = {
+       marginBottom:"20px",
+       justifyContent:"center",
+       display:"flex",
+       flexDirection:"column",
+       alignItems:"center",
+       flex:"1"
+   }
+   const spacingTab = {
+       marginBottom:"10px",
+       
+   }
+
+
 
 function Login()
 {
     return(
-        <div className = "Login">
+        <div className = "Login" >
 
                                                      
-<Container className = "container"  style = {cardContainer}>
+<Container className = "container" style = {cardContainer}>
     <Row>
         <Col>
             <Card style = {backgroundCard}>
