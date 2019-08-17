@@ -1,5 +1,5 @@
 import React from 'react'
-import {Badge, Button, Card, CardBody, Container, Image, Navbar, NavbarBrand, Row, Col, ListGroup, ListGroupItem} from 'react-bootstrap';
+import {Badge, Button, Card, CardBody, Container, Image, Input, Navbar, NavbarBrand, Row, Col, ListGroup, ListGroupItem} from 'react-bootstrap';
 import Profile from '../components/Profile';
 import profileImage from '../images/profilepicture.png';
 
@@ -14,9 +14,10 @@ const textFlex = {
     justifyContent:"center",
     alignItems:"center"
 }
-const buttonStyle = {
+const buttonStyle= {
     
 }
+
 const containerStyle = {
 
 
@@ -38,13 +39,17 @@ const textSize = {
     fontSize : "1rem"
 }
 
+
+
+
+
 let checkingAmt = 400;
 let savingsAmt = 3423.23;
 let creditAmt = 223.33;
 let notificationsAmt = 11;
 let yearJoin = 2015;
-
-function Balance()
+let accountStatus = "Unlocked";
+function Freeze()
 {
     return(
         <div className = "Balance">
@@ -73,11 +78,22 @@ function Balance()
                                     <Row>
                                         
                                             <Col>
-                                            <Image  style = {ImageSize} src = {profileImage}></Image>
+                                            <div className = "lead">
+                                            <p>
+                                                Lost your card? You have the ability to lock your account. 
+                                                This bank is insured by the FDIC up to a million dollars. 
+                                                Call this number 1-800-876-9083 for any questions regarding your account. 
+                                            </p>
                                             <br/>
-                                            <br/>
+                                                
+                                                    
+                                                
+                                            <h4>Status:&nbsp; {accountStatus}</h4>
+                                            </div>
+                                           
                                             
-                                            <h3 className = "lead">Welcome Back, Salvador! {/*javascript name goes here */}</h3>
+                                            
+                                            
                                            
                                            
                                             </Col>
@@ -111,23 +127,22 @@ function Balance()
                                        
 
                                         <Col className = "ButtonsStyle" xs = "12" sm = "12" md = "6" lg = "6" xlg = "6">
-                                        <Button  size="lg" style = {buttonStyle} variant = "primary">Transfer</Button>                                      
+                                        <Button  size="lg" style = {buttonStyle} variant = "primary">Freeze Account</Button>                                      
                                         </Col>
 
   
                                         <Col className = "ButtonsStyle" xs = "12" sm = "12" md = "6" lg = "6" xlg = "6">
-                                        <Button  size="lg" style = {buttonStyle} variant = "primary">Account</Button>
+                                        <Button  size="lg" style = {buttonStyle} variant = "primary">Unfreeze Account</Button>
                                         </Col>
 
-                                        <Col className = "ButtonsStyle" xs = "12" sm = "12" md = "6" lg = "6" xlg = "6">
-                                        <Button  size="lg" style = {buttonStyle} variant = "primary">Freeze</Button>
-                                        </Col>
+                                       
 
-                                        <Col className = "ButtonsStyle" xs = "12" sm = "12" md = "6" lg = "6" xlg = "6">
-                                        <Button  size="lg" style = {buttonStyle} variant = "success">Sign Out</Button>
-                                        </Col>
-                                         <Col className = "ButtonsStyle" xs = "12" sm = "12" md = "12" lg = "12" xlg = "12">                                    
-                                        <Button size="lg" style = {buttonStyle} variant = "primary">Notifications&nbsp;<Badge variant = "dark">{notificationsAmt}</Badge></Button>
+                                       
+                                         
+                                    </Row>
+                                    <Row>
+                                        <Col className = "ButtonsStyle" xs = "12" sm = "12" md = "12" lg = "12" xlg = "12">
+                                        <Button  size="lg" style = {buttonStyle} variant = "primary">Home</Button>
                                         </Col>
                                     </Row>
                                 </Container>
@@ -141,4 +156,4 @@ function Balance()
         </div>
     );
 }
-export default Balance
+export default Freeze

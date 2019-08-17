@@ -36,7 +36,6 @@ code {
  
 }
 
-
 .ButtonsStyle
 {
  display:flex;
@@ -48,7 +47,7 @@ padding-top:5px;
 }
 .ContainerMain
 {
-  padding-top:3%;
+  padding-top:2%;
 }
 .bg-dark .nav-background
 {
@@ -58,5 +57,11 @@ opacity:.5;
 .navbar-default
 {
   background-color:white;
+}
+
+.scrollClass{
+  height:200px;
+  overflow-y: scroll;
+  
 }
 
