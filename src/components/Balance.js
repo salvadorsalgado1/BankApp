@@ -1,5 +1,5 @@
 import React from 'react'
-import {Badge, Button, Card, CardBody, Container, Image, Row, Col, ListGroup, ListGroupItem} from 'react-bootstrap';
+import {Badge, Button, Card, CardBody, Container, Image, Navbar, NavbarBrand, Row, Col, ListGroup, ListGroupItem} from 'react-bootstrap';
 import Profile from '../components/Profile';
 import profileImage from '../images/profilepicture.png';
 
@@ -27,18 +27,40 @@ const ImageSize = {
   width:"auto"
 }
 
-
+const textColor = {
+    color:"white"
+}
+const cardShadow = {
+   
+    boxShadow:"5px 5px 5px 5px"
+}
 
 let checkingAmt = 4;
 let savingsAmt = 3;
 let creditAmt = 2;
-let notificationsAmt = 7;
+let notificationsAmt = 11;
 
 
 function Balance()
 {
     return(
         <div className = "Balance">
+<div className = "navbar">
+ <NavbarBrand>
+        <a classname = "lead"style = {textColor} href = "/">PathWays Banking</a>
+        
+    </NavbarBrand>
+<div className = "navbar-nav">
+     <Button variant = "dark">Sign Out</Button>
+    
+    
+    </div>
+
+</div>
+   
+   
+
+
             <Container className = "ContainerMain">
                 <Row>
                     <Col xs = "12">
@@ -89,10 +111,7 @@ function Balance()
                                         <Button  size="lg" style = {buttonStyle} variant = "primary">Transfer</Button>                                      
                                         </Col>
 
-                                        
-
-                                       
-
+  
                                         <Col className = "ButtonsStyle" xs = "12" sm = "12" md = "6" lg = "6" xlg = "6">
                                         <Button  size="lg" style = {buttonStyle} variant = "primary">Account</Button>
                                         </Col>

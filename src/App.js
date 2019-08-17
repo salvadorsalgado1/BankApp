@@ -9,8 +9,7 @@ import Header from './components/Header';
 import NavbarPage from './components/NavbarPage';
 import Login from './components/Login';
 import Balance from './components/Balance';
-
-
+import {HashRouter, Route, Link} from "react-router-dom";
 
 
 
@@ -18,17 +17,25 @@ import Balance from './components/Balance';
 
 
 function App() {
+
   return (
-    <div className="App">
-       
-          {/*<Login/>*/}
+   
+      <div className="App">
+          
+         
+      
+      <Login/>
+
       
 
-      <Balance />
-
-      
     </div>
+
+
+   
+  
   );
 }
+
+
 
 export default App;

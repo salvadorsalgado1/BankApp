@@ -1,4 +1,5 @@
 import React from 'react';
+import {HashRouter, Route, Link} from "react-router-dom";
 import {Form, FormGroup, FormLabel, InputGroup, FormControl, 
     Container, Row, Col, Card, CardGroup, Button, CardBody, 
     CardTitle, CardImg, Image, Tabs, Tab
@@ -41,7 +42,7 @@ const cardContainer = {
 
     width:"24rem",
     
-    marginBottom:"10px",
+   
     
      paddingTop:"10px",
      justifyContent:"center",
@@ -84,7 +85,11 @@ const cardContainer = {
 
 function Login()
 {
+  
+   
     return(
+      
+       
         <div className = "Login" >
 
                                                      
@@ -94,11 +99,11 @@ function Login()
             <Card style = {backgroundCard}>
                 <CardGroup>
                     <Card.Body>
-                        <Card.Img style = {marginImage} variant="top" src = {logo} />
+                       
                                       
                         <Tabs style = {spacingTab} defaultActiveKey = "First">
                             <Tab eventKey = "First" title = "Sign In">
-
+                            <Card.Img style = {marginImage} variant="top" src = {logo} />
                             <Card.Title style = {textColor} className = "lead">Already a Member?</Card.Title>
 
                                 <Form>
@@ -127,7 +132,7 @@ function Login()
                                         <Container>
                                             <Row>
                                                 <Col>
-                                                    <Button block variant = "outline-primary">Login</Button>
+                                                 <Button block variant = "outline-primary">Login</Button>
                                                 </Col>
                                             </Row>
                                         </Container>
@@ -139,7 +144,30 @@ function Login()
                             <Tab eventKey= "Second" title = "Sign Up">
                                 <Card.Title style = {textColor} className = "lead">Become a Member!</Card.Title>
                                     <Form>
-                                        <Form.Group controlId = "formHorizontalEmail">
+
+                                    <Form.Group controlId = "formFname">
+                                            <Container>
+                                                <Row>
+                                                    <Col>                                                             
+                                                        <Form.Control type = "email" placeholder = "First Name" />
+                                                    </Col>
+                                                            
+                                                </Row>
+                                            </Container>
+                                        </Form.Group>
+
+                                        <Form.Group controlId = "formLname">
+                                            <Container>
+                                                <Row>
+                                                    <Col>                                                             
+                                                        <Form.Control type = "email" placeholder = "Last Name" />
+                                                    </Col>
+                                                            
+                                                </Row>
+                                            </Container>
+                                        </Form.Group>
+
+                                        <Form.Group controlId = "formEmail">
                                             <Container>
                                                 <Row>
                                                     <Col>                                                             
@@ -150,11 +178,21 @@ function Login()
                                             </Container>
                                         </Form.Group>
 
-                                        <Form.Group controlId = "formHorizontalEmail">
+                                        <Form.Group controlId = "formPassword">
                                             <Container>
                                                 <Row>
                                                     <Col>
                                                         <Form.Control type = "password" placeholder = "Enter your password"/>
+                                                    </Col>
+                                                </Row>
+                                            </Container>                 
+                                        </Form.Group>
+
+                                        <Form.Group controlId = "formReePassword">
+                                            <Container>
+                                                <Row>
+                                                    <Col>
+                                                        <Form.Control type = "password" placeholder = "Social Security Number"/>
                                                     </Col>
                                                 </Row>
                                             </Container>                 
