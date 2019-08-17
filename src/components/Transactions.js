@@ -168,6 +168,7 @@ function Transactions()
             
                                          <Col className = "ButtonsStyle" xs = "12" sm = "12" md = "12" lg = "12" xlg = "12">                                    
                                         <Button size="lg" style = {buttonStyle} variant = "primary">Home</Button>
+                                        
                                         </Col>
                                     </Row>
                                 </Container>

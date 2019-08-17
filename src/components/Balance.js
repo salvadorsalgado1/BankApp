@@ -124,7 +124,7 @@ function Balance()
                                         </Col>
 
                                         <Col className = "ButtonsStyle" xs = "12" sm = "12" md = "6" lg = "6" xlg = "6">
-                                        <Button  size="lg" style = {buttonStyle} variant = "success">Sign Out</Button>
+                                        <Button  size="lg" style = {buttonStyle} variant = "success">Transactions</Button>
                                         </Col>
                                          <Col className = "ButtonsStyle" xs = "12" sm = "12" md = "12" lg = "12" xlg = "12">                                    
                                         <Button size="lg" style = {buttonStyle} variant = "primary">Notifications&nbsp;<Badge variant = "dark">{notificationsAmt}</Badge></Button>
