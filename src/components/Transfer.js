@@ -68,7 +68,7 @@ function Transfer()
             <Container className = "ContainerMain">
                 <Row>
                     <Col xs = "12">
-                        <Card >
+                        <Card style = {cardShadow}>
                             <Card.Body>
                                 <Container>
                                     <Row>
@@ -138,25 +138,10 @@ function Transfer()
                                                                         </Col> 
                                                                 </Row>
                                                                         
-                                                                      
-                                                               
-
-
-                                                                
-
-                                                                
-                                                               
-                                                                
-                                                                        
+                                                             
                                                             
                                                         </Container>
                                                     </Form.Group>
-
-
-                               
-
-                                                
-
 
 
 
@@ -169,7 +154,7 @@ function Transfer()
                     </Col>
 
                     <Col >
-                        <Card >
+                        <Card style = {cardShadow}>
                             <Card.Body>
                                 <Container >
                                     <Row>

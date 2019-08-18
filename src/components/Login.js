@@ -166,6 +166,25 @@ function Login()
                                                 </Row>
                                             </Container>
                                         </Form.Group>
+                                        <Form.Group controlId = "formReePassword">
+                                            <Container>
+                                                <Row>
+                                                    <Col>
+                                                        <Form.Control type = "City" placeholder = "City"/>
+                                                    </Col>
+                                                </Row>
+                                            </Container>                 
+                                        </Form.Group>
+                                        <Form.Group controlId = "formReePassword">
+                                            <Container>
+                                                <Row>
+                                                    <Col>
+                                                        <Form.Control type = "State" placeholder = "State"/>
+                                                    </Col>
+                                                </Row>
+                                            </Container>                 
+                                        </Form.Group>
+                                        <Form.Group>
 
                                         <Form.Group controlId = "formEmail">
                                             <Container>
@@ -198,7 +217,7 @@ function Login()
                                             </Container>                 
                                         </Form.Group>
 
-                                        <Form.Group>
+                                      
                                             <Container>
                                                 <Row>
                                                     <Col>

@@ -42,7 +42,9 @@ html, body{
 {
   background-image:url(images/NightCity.jpg);
  
-  height:100vh;
+ 
   
-  background-size:cover;
+  background-size:cover; 
+  height:105vh;
+  
 }

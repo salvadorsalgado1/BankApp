@@ -13,6 +13,7 @@ import Transactions from './components/Transactions';
 import Freeze from './components/Freeze';
 import Signout from './components/Signout';
 import Transfer from './components/Transfer';
+import Account from './components/Account';
 import {Router, Route, BrowserRouter, Link} from "react-router-dom";
 
 
@@ -26,7 +27,7 @@ function App() {
    
     <div className="App">
         
-    <Balance/>
+   <Account/>
 
     </div>
 

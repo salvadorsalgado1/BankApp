@@ -40,7 +40,7 @@ let creditAmt = 223.33;
 let notificationsAmt = 11;
 let yearJoin = 2015;
 
-function Balance()
+function Account()
 {
     return(
         <div className = "Balance">
@@ -50,8 +50,9 @@ function Balance()
         
     </NavbarBrand>
 <div className = "navbar-nav">
+
      <Button variant = "dark">Sign Out</Button>
-    
+     
     
     </div>
 
@@ -70,26 +71,40 @@ function Balance()
                                         
                                             <Col>
                                             <Image  style = {ImageSize} src = {profileImage}></Image>
-                                            <br/>
-                                            <br/>
                                             
-                                            <h3 className = "lead">Welcome Back, Salvador! {/*javascript name goes here */}</h3>
+                                            <br/>
+                                            <br/>
+                                            <Button variant = "primary">Change Picture</Button>
+                                            
+                                           
                                            
                                            
                                             </Col>
+                                          
                                         
                                             <Col>
-                                            <h4 className = "lead">Accounts</h4>
+                                            <h4 className = "lead">Account Information</h4>
                                             <ListGroup>
                                                 <ListGroupItem>
-                                                <h4 className = "lead">Checking:&nbsp; $&nbsp;{checkingAmt}{/*javascript name goes here */}</h4>                                                  
+                                                         <p className = "lead">First Name:&nbsp;Salvador</p>                                        
                                                 </ListGroupItem>
                                                 <ListGroupItem>
-                                                <h4 className = "lead">Savings:&nbsp; $&nbsp;{savingsAmt}{/*javascript name goes here */}</h4>
+                                                         <p className = "lead">Last Name:&nbsp;Salgado</p>                                        
                                                 </ListGroupItem>
                                                 <ListGroupItem>
-                                                <h4 className = "lead">Credit:&nbsp; $&nbsp;{creditAmt}{/*javascript name goes here */}</h4>
+                                                         <p className = "lead">City:&nbsp;Springfield</p>                                        
                                                 </ListGroupItem>
+                                                <ListGroupItem>
+                                                         <p className = "lead">State:&nbsp;Ohio</p>                                        
+                                                </ListGroupItem>
+                                                <ListGroupItem>
+                                                         <p className = "lead">Email:&nbsp;sal123@gmail.com</p>                                        
+                                                </ListGroupItem>
+                                                <ListGroupItem>
+                                                         <p className = "lead">Social Security:&nbsp;*****2398</p>                                        
+                                                </ListGroupItem>
+
+                                               
                                             </ListGroup>
                                             </Col>
                                     </Row>
@@ -98,36 +113,7 @@ function Balance()
                         </Card>
                     </Col>
 
-                    <Col >
-                        <Card style = {ContainerMain} >
-                            <Card.Body>
-                                <Container >
-                                    <Row>
-
-                                       
-
-                                        <Col className = "ButtonsStyle" xs = "12" sm = "12" md = "6" lg = "6" xlg = "6">
-                                        <Button  size="lg" style = {buttonStyle} variant = "primary">Transfer</Button>                                      
-                                        </Col>
-
-  
-                                        <Col className = "ButtonsStyle" xs = "12" sm = "12" md = "6" lg = "6" xlg = "6">
-                                        <Button  size="lg" style = {buttonStyle} variant = "primary">Account</Button>
-                                        </Col>
-
-                                        <Col className = "ButtonsStyle" xs = "12" sm = "12" md = "6" lg = "6" xlg = "6">
-                                        <Button  size="lg" style = {buttonStyle} variant = "info">Freeze</Button>
-                                        </Col>
-
-                                        <Col className = "ButtonsStyle" xs = "12" sm = "12" md = "6" lg = "6" xlg = "6">
-                                        <Button href = "/Transfer" size="lg" style = {buttonStyle} variant = "primary">Transactions</Button>
-                                        </Col>
-                                        
-                                    </Row>
-                                </Container>
-                            </Card.Body>
-                        </Card>
-                    </Col>
+                   
                 </Row>
             </Container>
           
@@ -135,4 +121,4 @@ function Balance()
         </div>
     );
 }
-export default Balance
+export default Account

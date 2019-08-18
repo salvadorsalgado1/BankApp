@@ -77,7 +77,7 @@ function Transactions()
             <Container className = "ContainerMain">
                 <Row>
                     <Col xs = "12">
-                        <Card >
+                        <Card style = {cardShadow}>
                             <Card.Body>
                                 <Container>
                                     <Row>
@@ -92,7 +92,7 @@ function Transactions()
                                            
                                             </Col>
                                         
-                                            <Col>
+                                            <Col >
                                             <h4 className = "lead">Accounts</h4>
                                             <ListGroup>
                                                 <ListGroupItem>
@@ -113,7 +113,7 @@ function Transactions()
                     </Col>
 
                     <Col >
-                        <Card >
+                        <Card style = {cardShadow}>
                             <Card.Body>
                                 <Container >
                                     <Row>

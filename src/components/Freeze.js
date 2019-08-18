@@ -72,7 +72,7 @@ function Freeze()
             <Container className = "ContainerMain">
                 <Row>
                     <Col xs = "12">
-                        <Card >
+                        <Card style = {cardShadow}>
                             <Card.Body>
                                 <Container>
                                     <Row>
@@ -119,7 +119,7 @@ function Freeze()
                     </Col>
 
                     <Col >
-                        <Card >
+                        <Card style = {cardShadow} >
                             <Card.Body>
                                 <Container >
                                     <Row>
