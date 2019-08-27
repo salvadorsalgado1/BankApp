@@ -31,13 +31,16 @@ const cardShadow = {
    
     boxShadow:"5px 5px 5px 5px"
 }
+const navTextSize = {
+    fontSize: "1rem",
+    color:"white"
+}
 const textSize = {
     fontSize : "1rem"
 }
-
-
-
-
+const containerSize = {
+    height:"2vw"
+}
 
 let checkingAmt = 400;
 let savingsAmt = 3423.23;
@@ -49,25 +52,26 @@ function Transfer()
 {
     return(
         <div className = "Balance">
-<div className = "navbar">
- <NavbarBrand>
-        <a classname = "lead" style = {textColor} href = "/">PathWays Banking,  <p style = {textSize} className = "lead">Member since {yearJoin}</p></a>
-        
-    </NavbarBrand>
-<div className = "navbar-nav">
-     <Button variant = "dark">Sign Out</Button>
-    
-    
-    </div>
+            <div className = "navbar">
+                <NavbarBrand>
+                        <a classname = "lead" style = {textColor} href = "/">PathWays Banking,  <p style = {textSize} className = "lead">Member since {yearJoin}</p></a>
+                        
+                </NavbarBrand>
+                
+                <div className = "navbar-nav">
+                    <Button variant = "dark">Sign Out</Button>
+                    
+                    
+                </div>
 
-</div>
+            </div>
+            
    
-   
 
 
-            <Container className = "ContainerMain">
+            <Container style = {containerSize}>
                 <Row>
-                    <Col xs = "12">
+                    <Col  xs = "12">
                         <Card style = {cardShadow}>
                             <Card.Body>
                                 <Container>
@@ -76,8 +80,8 @@ function Transfer()
                                          
                                         
                                             <Col>
-                                            <h4 className = "lead">Accounts</h4>
-                                            <ListGroup>
+                                                <h4 className = "lead">Accounts</h4>
+                                                <ListGroup>
                                                 <ListGroupItem>
                                                 <h4 className = "lead">Checking:&nbsp; $&nbsp;{checkingAmt}{/*javascript name goes here */}</h4>                                                  
                                                 </ListGroupItem>
@@ -89,11 +93,12 @@ function Transfer()
                                                 </ListGroupItem>
                                                 <div className = "lead">
                                            
-                                            <br/>
+                                                <br/>
 
-                                            </div>
-                                            </ListGroup>
+                                                </div>
+                                                </ListGroup>
                                             </Col>
+
                                             <Col>
                                            
                                             <Form>
@@ -102,24 +107,18 @@ function Transfer()
                                                 
                                                     <Form.Group controlId = "formAccountList">
                                                         <Container>
-                                                        <p className = "lead">
-                                                Transfer between accounts.
-                                            </p>
-                                                            <Row>
-                                                                
-                                                                <Col>            
-                                                                       
-                                                                        <select id = "inputState" class = "form-control">
-                                                                            <option>Checking</option>
-                                                                            <option>Savings</option>
-                                                                            <option>Credit</option>
-                                                                        </select> 
+                                                            <p className = "lead">Transfer between accounts.</p>
+                                                            <Row>                                                   
+                                                                <Col>                                                    
+                                                                    <select id = "inputState" class = "form-control">
+                                                                        <option>Checking</option>
+                                                                        <option>Savings</option>
+                                                                        <option>Credit</option>
+                                                                    </select> 
                                                            
-                                                                    <Form.Control type = "email" placeholder = "Amount" />
-                                                                    
-                                                                
+                                                                    <Form.Control type = "email" placeholder = "Amount" />                                              
                                                                 </Col>
-                                                                </Row>
+                                                            </Row>
 
 
                                                                 <Row>
@@ -135,8 +134,13 @@ function Transfer()
                                                                             <option>Savings</option>
                                                                             <option>Credit</option>
                                                                         </select> 
-                                                                        </Col> 
+
+                                                                    
+
+                                                                    </Col> 
                                                                 </Row>
+
+                               
                                                                         
                                                              
                                                             
@@ -148,40 +152,27 @@ function Transfer()
                                                 </Form>
                                             </Col>
                                     </Row>
+
+                                    <Row>
+                                                                    
+                                                                    <Col className = "ButtonsStyle" xs = "12" sm = "12" md = "12" lg = "12" xlg = "12">
+                                                                        <Button  size="lg" style = {buttonStyle} variant = "primary">Transfer</Button>
+                                                                    </Col>
+                                                                    <Col className = "ButtonsStyle" xs = "12" sm = "12" md = "12" lg = "12" xlg = "12">
+                                                                        <Button  size="lg" style = {buttonStyle} variant = "primary">Cancel</Button>
+                                                                    </Col>
+
+                                                                  
+
+
+                                    </Row>
+                                                                
                                 </Container>
                             </Card.Body>
                         </Card>
                     </Col>
 
-                    <Col >
-                        <Card style = {cardShadow}>
-                            <Card.Body>
-                                <Container >
-                                    <Row>
-
-                                       
-
-                                        <Col className = "ButtonsStyle" xs = "12" sm = "12" md = "12" lg = "12" xlg = "12">
-                                        <Button  size="lg" style = {buttonStyle} variant = "primary">Transfer</Button>                                      
-                                        </Col>
-
-  
-                                       
-
-                                       
-
-                                       
-                                         
-                                    </Row>
-                                    <Row>
-                                        <Col className = "ButtonsStyle" xs = "12" sm = "12" md = "12" lg = "12" xlg = "12">
-                                        <Button  size="lg" style = {buttonStyle} variant = "primary">Home</Button>
-                                        </Col>
-                                    </Row>
-                                </Container>
-                            </Card.Body>
-                        </Card>
-                    </Col>
+                   
                 </Row>
             </Container>
           

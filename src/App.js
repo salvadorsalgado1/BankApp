@@ -20,14 +20,25 @@ import {Router, Route, BrowserRouter, Link} from "react-router-dom";
 
 
 
-
 function App() {
 
   return (
    
     <div className="App">
-        
-   <Account/>
+      
+    {/*
+    <Balance/>
+
+    <Account/>
+    <Transactions/>
+    <Freeze/>
+    <Signout/>
+    <Transfer/>
+    <Login/>
+  
+    */}
+  
+    <Main/>
 
     </div>
 

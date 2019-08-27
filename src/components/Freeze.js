@@ -36,8 +36,14 @@ const cardShadow = {
     boxShadow:"5px 5px 5px 5px"
 }
 const textSize = {
-    fontSize : "1rem"
+   fontSize:"1rem",
+    color:"white"
 }
+const textSizeFreezeInfo = {
+    fontSize:"2.5vw",
+    
+}
+
 
 
 
@@ -48,14 +54,14 @@ let savingsAmt = 3423.23;
 let creditAmt = 223.33;
 let notificationsAmt = 11;
 let yearJoin = 2015;
-let accountStatus = "Unlocked";
+let accountStatus = "checked";
 function Freeze()
 {
     return(
         <div className = "Balance">
 <div className = "navbar">
  <NavbarBrand>
-        <a classname = "lead" style = {textColor} href = "/">PathWays Banking,  <p style = {textSize} className = "lead">Member since {yearJoin}</p></a>
+        <a classname = "lead" style = {textSize} href = "/">PathWays Banking,  <p style = {textSize} className = "lead">Member since {yearJoin}</p></a>
         
     </NavbarBrand>
 <div className = "navbar-nav">
@@ -77,19 +83,26 @@ function Freeze()
                                 <Container>
                                     <Row>
                                         
-                                            <Col>
-                                            <div className = "lead">
-                                            <p>
-                                                Lost your card? You have the ability to lock your account. 
-                                                This bank is insured by the FDIC up to a million dollars. 
-                                                Call this number 1-800-876-9083 for any questions regarding your account. 
-                                            </p>
-                                            <br/>
+                                            <Col >
+                                                <div>
+                                                <p className = "lead" style = {textSizeFreezeInfo} >
+                                                    Lost your card? You have the ability to lock your account. 
+                                                    This bank is insured by the FDIC up to a million dollars. 
+                                                    Call this number 1-800-876-9083 for any questions regarding your account. 
+                                                </p>
+                                                <br/>
                                                 
                                                     
                                                 
-                                            <h4>Status:&nbsp; {accountStatus}</h4>
-                                            </div>
+                                                
+                                            
+                                                <div className = "custom-control custom-switch">
+                                                    
+                                                    <input type = "checkbox" class="custom-control-input" id = "customSwitch2" uncheck></input>
+                                                    <label className = "custom-control-label" for="customSwitch2" >Frozen</label>
+                                                </div>
+
+                                                </div>
                                            
                                             
                                             
@@ -99,16 +112,16 @@ function Freeze()
                                             </Col>
                                         
                                             <Col>
-                                            <h4 className = "lead">Accounts</h4>
-                                            <ListGroup>
+                                            <h4 style = {textSizeFreezeInfo} className = "lead">Accounts</h4>
+                                            <ListGroup >
                                                 <ListGroupItem>
-                                                <h4 className = "lead">Checking:&nbsp; $&nbsp;{checkingAmt}{/*javascript name goes here */}</h4>                                                  
+                                                <h4 style = {textSizeFreezeInfo} className = "lead text-left">Checking:&nbsp; $&nbsp;{checkingAmt}{/*javascript name goes here */}</h4>                                                  
                                                 </ListGroupItem>
                                                 <ListGroupItem>
-                                                <h4 className = "lead">Savings:&nbsp; $&nbsp;{savingsAmt}{/*javascript name goes here */}</h4>
+                                                <h4 style = {textSizeFreezeInfo} className = "lead text-left">Savings:&nbsp; $&nbsp;{savingsAmt}{/*javascript name goes here */}</h4>
                                                 </ListGroupItem>
                                                 <ListGroupItem>
-                                                <h4 className = "lead">Credit:&nbsp; $&nbsp;{creditAmt}{/*javascript name goes here */}</h4>
+                                                <h4 style = {textSizeFreezeInfo} className = "lead text-left">Credit:&nbsp; $&nbsp;{creditAmt}{/*javascript name goes here */}</h4>
                                                 </ListGroupItem>
                                             </ListGroup>
                                             </Col>
@@ -122,24 +135,7 @@ function Freeze()
                         <Card style = {cardShadow} >
                             <Card.Body>
                                 <Container >
-                                    <Row>
-
-                                       
-
-                                        <Col className = "ButtonsStyle" xs = "12" sm = "12" md = "6" lg = "6" xlg = "6">
-                                        <Button  size="lg" style = {buttonStyle} variant = "primary">Freeze Account</Button>                                      
-                                        </Col>
-
-  
-                                        <Col className = "ButtonsStyle" xs = "12" sm = "12" md = "6" lg = "6" xlg = "6">
-                                        <Button  size="lg" style = {buttonStyle} variant = "primary">Unfreeze Account</Button>
-                                        </Col>
-
-                                       
-
-                                       
-                                         
-                                    </Row>
+                            
                                     <Row>
                                         <Col className = "ButtonsStyle" xs = "12" sm = "12" md = "12" lg = "12" xlg = "12">
                                         <Button  size="lg" style = {buttonStyle} variant = "primary">Home</Button>

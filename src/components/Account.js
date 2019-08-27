@@ -33,6 +33,14 @@ const ContainerMain = {
 const textSize = {
     fontSize : "1rem"
 }
+const textSizeAccount = {
+    fontSize:"2vw",
+    
+}
+const containerSize = {
+    height:"2vw"
+}
+
 
 let checkingAmt = 400;
 let savingsAmt = 3423.23;
@@ -45,13 +53,28 @@ function Account()
     return(
         <div className = "Balance">
 <div className = "navbar">
+
+    
  <NavbarBrand>
-        <a classname = "lead" style = {textColor} href = "/">PathWays Banking,  <p style = {textSize} className = "lead">Member since {yearJoin}</p></a>
+        <a classname = "lead" style = {textColor} href = "/">PathWays Banking,<p style = {textSize} className = "lead">Member since {yearJoin}</p></a>
         
     </NavbarBrand>
 <div className = "navbar-nav">
+<Container>
+    <Row>
+          <Col>
+          <Button  variant = "info">Home</Button>
+        </Col>
+        
+        <Col>
+        <Button  variant = "dark">Sign Out</Button>
+        
+        </Col>
+      
 
-     <Button variant = "dark">Sign Out</Button>
+    </Row>
+</Container>
+     
      
     
     </div>
@@ -61,10 +84,10 @@ function Account()
    
 
 
-            <Container className = "ContainerMain">
+            <Container style={containerSize}>
                 <Row>
                     <Col xs = "12">
-                        <Card style = {ContainerMain} >
+                        <Card >
                             <Card.Body >
                                 <Container >
                                     <Row>
@@ -83,31 +106,38 @@ function Account()
                                           
                                         
                                             <Col>
-                                            <h4 className = "lead">Account Information</h4>
-                                            <ListGroup>
+                                            <h4 style = {textSizeAccount} className = "lead">Account Information</h4>
+                                            <ListGroup className = "text-left">
                                                 <ListGroupItem>
-                                                         <p className = "lead">First Name:&nbsp;Salvador</p>                                        
+                                                         <p style = {textSizeAccount} className = "lead"><strong>First Name:</strong>&nbsp;Salvador</p>                                        
                                                 </ListGroupItem>
                                                 <ListGroupItem>
-                                                         <p className = "lead">Last Name:&nbsp;Salgado</p>                                        
+                                                         <p style = {textSizeAccount}className = "lead"><strong>Last Name:</strong>&nbsp;Salgado</p>                                        
                                                 </ListGroupItem>
                                                 <ListGroupItem>
-                                                         <p className = "lead">City:&nbsp;Springfield</p>                                        
+                                                         <p style = {textSizeAccount}className = "lead"><strong>City:</strong>&nbsp;Springfield</p>                                        
                                                 </ListGroupItem>
                                                 <ListGroupItem>
-                                                         <p className = "lead">State:&nbsp;Ohio</p>                                        
+                                                         <p style = {textSizeAccount}className = "lead"><strong>State:</strong>&nbsp;Ohio</p>                                        
                                                 </ListGroupItem>
                                                 <ListGroupItem>
-                                                         <p className = "lead">Email:&nbsp;sal123@gmail.com</p>                                        
+                                                         <p style = {textSizeAccount}className = "lead"><strong>Email:</strong>&nbsp;sal123@gmail.com</p>                                        
                                                 </ListGroupItem>
                                                 <ListGroupItem>
-                                                         <p className = "lead">Social Security:&nbsp;*****2398</p>                                        
+                                                         <p style = {textSizeAccount}className = "lead"><strong>Social Security:</strong>&nbsp;*****2398</p>                                        
                                                 </ListGroupItem>
 
                                                
                                             </ListGroup>
+
+                                            
                                             </Col>
+
+                                            
                                     </Row>
+
+                                   
+                        
                                 </Container>
                             </Card.Body>
                         </Card>

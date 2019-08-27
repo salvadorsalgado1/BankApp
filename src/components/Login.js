@@ -8,6 +8,9 @@ import {Form, FormGroup, FormLabel, InputGroup, FormControl,
 
 
 import logo from '../images/logo.png';
+import ViewB from './ViewB';
+
+
 /*
 const cardContainer = {
 
@@ -88,7 +91,20 @@ function Login()
   
    
     return(
+
+
+        <div className = "Login">
+
+            
+
+
+        
       
+        
+        
+        
+        
+       
        
         <div className = "Login" >
 
@@ -239,9 +255,11 @@ function Login()
     
 
         
-     
+     </div>
 
         </div>
+
+         
     );
 }
 
