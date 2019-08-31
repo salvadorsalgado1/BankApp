@@ -72,15 +72,13 @@ function Freeze()
 
 </div>
    
-   
-
-
             <Container className = "ContainerMain">
                 <Row>
                     <Col xs = "12">
                         <Card style = {cardShadow}>
-                            <Card.Body>
+                            <Card.Body style = {textSizeFreezeInfo}>
                                 <Container>
+
                                     <Row>
                                         
                                             <Col >
@@ -90,17 +88,13 @@ function Freeze()
                                                     This bank is insured by the FDIC up to a million dollars. 
                                                     Call this number 1-800-876-9083 for any questions regarding your account. 
                                                 </p>
-                                                <br/>
+                                               
                                                 
                                                     
                                                 
                                                 
                                             
-                                                <div className = "custom-control custom-switch">
-                                                    
-                                                    <input type = "checkbox" class="custom-control-input" id = "customSwitch2" uncheck></input>
-                                                    <label className = "custom-control-label" for="customSwitch2" >Frozen</label>
-                                                </div>
+                                               
 
                                                 </div>
                                            
@@ -111,44 +105,38 @@ function Freeze()
                                            
                                             </Col>
                                         
-                                            <Col>
-                                            <h4 style = {textSizeFreezeInfo} className = "lead">Accounts</h4>
-                                            <ListGroup >
-                                                <ListGroupItem>
-                                                <h4 style = {textSizeFreezeInfo} className = "lead text-left">Checking:&nbsp; $&nbsp;{checkingAmt}{/*javascript name goes here */}</h4>                                                  
-                                                </ListGroupItem>
-                                                <ListGroupItem>
-                                                <h4 style = {textSizeFreezeInfo} className = "lead text-left">Savings:&nbsp; $&nbsp;{savingsAmt}{/*javascript name goes here */}</h4>
-                                                </ListGroupItem>
-                                                <ListGroupItem>
-                                                <h4 style = {textSizeFreezeInfo} className = "lead text-left">Credit:&nbsp; $&nbsp;{creditAmt}{/*javascript name goes here */}</h4>
-                                                </ListGroupItem>
-                                            </ListGroup>
-                                            </Col>
+                                           
+                                    </Row>
+
+                                    <Row>
+
+                                    <Col >
+                                        <div style = {textSizeFreezeInfo} className = "custom-control custom-switch">                                     
+                                                            <input type = "checkbox" class="custom-control-input" id = "customSwitch2" uncheck></input>
+                                                            <label className = "custom-control-label" for="customSwitch2" ></label>                                              
+                                        </div>
+                                        
+                                        <p>Freeze Account</p>
+                                    </Col>
+                                   
+                                        
+                                    <Col className = "ButtonsStyle" xs = "12" sm = "12" md = "12" lg = "12" xlg = "12">
+                                               
+
+                                                <Button  size="lg"style = {textSizeFreezeInfo} variant = "primary">Home</Button>
+                                    </Col>
+                                       
                                     </Row>
                                 </Container>
                             </Card.Body>
                         </Card>
                     </Col>
 
-                    <Col >
-                        <Card style = {cardShadow} >
-                            <Card.Body>
-                                <Container >
-                            
-                                    <Row>
-                                        <Col className = "ButtonsStyle" xs = "12" sm = "12" md = "12" lg = "12" xlg = "12">
-                                        <Button  size="lg" style = {buttonStyle} variant = "primary">Home</Button>
-                                        </Col>
-                                    </Row>
-                                </Container>
-                            </Card.Body>
-                        </Card>
-                    </Col>
+                   
                 </Row>
             </Container>
           
-
+            
         </div>
     );
 }

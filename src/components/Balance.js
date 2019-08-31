@@ -28,7 +28,9 @@ const textColor = {
 }
 const ContainerMain = {
    
-    boxShadow:"5px 5px 5px 5px"
+    boxShadow:"5px 5px 5px 5px",
+    width:"35vw",
+    height:"auto"
 }
 const textSize = {
     fontSize : "1rem"

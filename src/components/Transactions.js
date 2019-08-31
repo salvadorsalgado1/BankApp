@@ -22,9 +22,10 @@ const containerStyle = {
 
 
 
+
 }
 const ImageSize = {
-height:"10em",
+height:"10rem",
 width:"auto"
 }
 
@@ -33,7 +34,8 @@ const textColor = {
 }
 const cardShadow = {
 
- boxShadow:"5px 5px 5px 5px"
+ boxShadow:"5px 5px 5px 5px",
+ 
 }
 const textSize = {
  fontSize : "1rem"
@@ -74,7 +76,7 @@ function Transactions()
    
 
 
-            <Container className = "ContainerMain">
+            <Container className = "ContainerMain" style = {containerStyle}>
                 <Row>
                     <Col xs = "12">
                         <Card style = {cardShadow}>
@@ -107,15 +109,7 @@ function Transactions()
                                             </ListGroup>
                                             </Col>
                                     </Row>
-                                </Container>
-                            </Card.Body>
-                        </Card>
-                    </Col>
 
-                    <Col >
-                        <Card style = {cardShadow}>
-                            <Card.Body>
-                                <Container >
                                     <Row>
 
                                        <Container>
@@ -171,10 +165,15 @@ function Transactions()
                                         
                                         </Col>
                                     </Row>
+
+
+
                                 </Container>
                             </Card.Body>
                         </Card>
                     </Col>
+
+                  
                 </Row>
             </Container>
           

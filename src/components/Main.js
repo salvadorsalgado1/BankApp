@@ -16,7 +16,7 @@ import Account from './Account';
 export class Main extends Component{
 
 state = {
-   step:1
+   step:4
 }
 
 

@@ -3,12 +3,17 @@ import {Buttons, Image} from 'react-bootstrap';
 import profileImage from '../images/profilepicture.png';
 
 const ImageSize = {
-  
+   
+   
+        boxShadow:"5px 5px 5px",
+        width:"35vw",
+        height:"auto"
+   
 }
 function Profile(){
     return(
-        <div className = "Profile">
-            <Image style = {ImageSize} src = {profileImage}></Image>
+        <div className = "Profile" style = {ImageSize}>
+            <Image src = {profileImage}></Image>
         </div>
     );
 }
