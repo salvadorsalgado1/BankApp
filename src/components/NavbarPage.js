@@ -1,8 +1,9 @@
 import React from 'react';
 import {Navbar, NavbarBrand, Button, Container, Row, Col} from 'react-bootstrap';
-import {Router, Link} from 'react-router-dom';
+import {Router, Link, Switch, Route} from 'react-router-dom';
 import Login from './Login';
 import Balance from './Balance';
+
 
 
 
@@ -47,10 +48,14 @@ function NavbarPage() {
         </Col>
         
         <Col>
-        <Link to = "login" component = {Login}>
+
+        <Switch>
+        <Link to = "/" component = {Login}>
         <Button  variant = "dark">Sign Out</Button>
         
         </Link>
+        </Switch>
+       
       
         </Col>
       

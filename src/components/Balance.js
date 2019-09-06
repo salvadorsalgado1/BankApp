@@ -17,7 +17,7 @@ const textFlex = {
     alignItems:"center"
 }
 const buttonStyle = {
-    
+    display:"brick"
 }
 const containerStyle = {
 
@@ -35,8 +35,7 @@ const textColor = {
 const ContainerMain = {
    
     boxShadow:"5px 5px 5px 5px",
-    width:"35vw",
-    height:"auto"
+   height:"100%"
 }
 const textSize = {
     fontSize : "1rem"
@@ -64,7 +63,6 @@ function Balance()
                             <Card.Body >
                                 <Container >
                                     <Row>
-                                        
                                             <Col>
                                             <Image  style = {ImageSize} src = {profileImage}></Image>
                                             <br/>
@@ -90,22 +88,13 @@ function Balance()
                                             </ListGroup>
                                             </Col>
                                     </Row>
-                                </Container>
-                            </Card.Body>
-                        </Card>
-                    </Col>
 
-                    <Col >
-                        <Card style = {ContainerMain} >
-                            <Card.Body>
-                                <Container >
+
                                     <Row>
 
-                                       
-
-                                        <Col className = "ButtonsStyle" xs = "12" sm = "12" md = "6" lg = "6" xlg = "6">
+                                    <Col className = "ButtonsStyle" xs = "12" sm = "12" md = "6" lg = "6" xlg = "6">
                                             <Link to = "transfer" component = {Transfer}>
-                                            <Button  size="lg" style = {buttonStyle} variant = "primary">Transfer</Button>                                      
+                                            <Button  className = "btn-block" size="lg" style = {buttonStyle} variant = "primary">Transfer</Button>                                      
                                             </Link>
                                       
                                         </Col>
@@ -113,14 +102,14 @@ function Balance()
   
                                         <Col className = "ButtonsStyle" xs = "12" sm = "12" md = "6" lg = "6" xlg = "6">
                                             <Link to = "account" component = {Account}>
-                                            <Button  size="lg" style = {buttonStyle} variant = "primary">Account</Button>
+                                            <Button  className = "btn-block" size="lg" style = {buttonStyle} variant = "primary">Account</Button>
                                             </Link>
                                         
                                         </Col>
 
                                         <Col className = "ButtonsStyle" xs = "12" sm = "12" md = "6" lg = "6" xlg = "6">
                                             <Link to = "freeze" component = {Freeze}>
-                                            <Button  size="lg" style = {buttonStyle} variant = "info">Freeze</Button>
+                                            <Button  className = "btn-block" size="lg" style = {buttonStyle} variant = "info">Freeze</Button>
                                             </Link>
                                        
                                         </Col>
@@ -128,16 +117,18 @@ function Balance()
                                         <Col className = "ButtonsStyle" xs = "12" sm = "12" md = "6" lg = "6" xlg = "6">
 
                                         <Link to = "transactions" component = {Transactions}>
-                                        <Button href = "/Transfer" size="lg" style = {buttonStyle} variant = "primary">Transactions</Button>
+                                        <Button  className = "btn-block" size="lg" style = {buttonStyle} variant = "primary">Transactions</Button>
                                         </Link>
                                        
                                         </Col>
-                                        
+
                                     </Row>
                                 </Container>
                             </Card.Body>
                         </Card>
                     </Col>
+
+                   
                 </Row>
             </Container>
           

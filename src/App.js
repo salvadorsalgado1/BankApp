@@ -15,7 +15,7 @@ import Freeze from './components/Freeze';
 import Signout from './components/Signout';
 import Transfer from './components/Transfer';
 import Account from './components/Account';
-import {Router, Route, BrowserRouter, Link, HashRouter} from "react-router-dom";
+import {Router, Route, BrowserRouter, Link, Redirect,Switch, HashRouter} from "react-router-dom";
 
 
 
@@ -42,12 +42,23 @@ function App() {
   
   
 <HashRouter>
-      <Route path = {"/login"} component = {Login}></Route>
-       <Route path = {"/balance"} component = {Balance}></Route>
+     
+{/* 
+ <Route path = {"/login"} component = {Login}></Route>*/}
+ <Switch>
+ <Route exact from ={"/"} component = {Login}></Route>
+ 
+
+      <Route path = {"/balance"} component = {Balance}></Route>
        <Route path = {"/transfer"} component = {Transfer}></Route>
           <Route path = {"/account"} component = {Account}></Route>
           <Route path = {"/freeze"} component = {Freeze}></Route>
           <Route path = {"/transactions"} component = {Transactions}></Route>
+          
+          </Switch>
+ 
+    
+      
      
   </HashRouter>
   

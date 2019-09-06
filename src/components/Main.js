@@ -104,7 +104,7 @@ export class Main extends Component{
 
 return(
 <div>
-  <NavbarPage/>
+  {this.props.children}
 
 </div>
   

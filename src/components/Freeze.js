@@ -43,7 +43,8 @@ const textSize = {
     color:"white"
 }
 const textSizeFreezeInfo = {
-    fontSize:"2.5vw",
+    fontSize:"1.4rem",
+    
     
 }
 

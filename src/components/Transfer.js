@@ -17,9 +17,7 @@ const textFlex = {
     justifyContent:"center",
     alignItems:"center"
 }
-const buttonStyle= {
-    
-}
+
 
 
 const ImageSize = {
@@ -69,8 +67,6 @@ function Transfer()
                                 <Container>
                                     <Row>
                                         
-                                         
-                                        
                                             <Col>
                                                 <h4 className = "lead">Accounts</h4>
                                                 <ListGroup>
@@ -95,8 +91,6 @@ function Transfer()
                                            
                                             <Form>
 
-
-                                                
                                                     <Form.Group controlId = "formAccountList">
                                                         <Container>
                                                             <p className = "lead">Transfer between accounts.</p>
@@ -126,41 +120,28 @@ function Transfer()
                                                                             <option>Savings</option>
                                                                             <option>Credit</option>
                                                                         </select> 
-
-                                                                    
-
                                                                     </Col> 
                                                                 </Row>
 
-                               
-                                                                        
-                                                             
-                                                            
                                                         </Container>
                                                     </Form.Group>
-
-
-
-                                                </Form>
+                                                 </Form>
                                             </Col>
                                     </Row>
+                                    <br />  
+                                    <br />  
+                                    <Row>                                                        
+                                            <Col className = "ButtonsStyle" xs = "12" sm = "12" md = "12" lg = "12" xlg = "12">
 
-                                    <Row>
-                                                                    
-                                                                    <Col className = "ButtonsStyle" xs = "12" sm = "12" md = "12" lg = "12" xlg = "12">
-                                                                        <Button  size="lg" style = {buttonStyle} variant = "primary">Transfer</Button>
-                                                                    </Col>
-                                                                    <Col className = "ButtonsStyle" xs = "12" sm = "12" md = "12" lg = "12" xlg = "12">
-                                                                        <Link to = "balance" component = {Balance}>
-                                                                        <Button  size="lg" style = {buttonStyle} variant = "primary">Cancel</Button>
+                                                <Button  className = "btn-block" size="lg" variant = "primary">Transfer</Button>
+                                            </Col>
 
-                                                                        </Link>
+                                            <Col className = "ButtonsStyle" xs = "12" sm = "12" md = "12" lg = "12" xlg = "12">
+                                                <Link to = "balance" component = {Balance}>
+                                                <Button className = "btn-block" size="lg" variant = "primary">Cancel</Button>
+                                                </Link>
                                                                         
-                                                                    </Col>
-
-                                                                  
-
-
+                                            </Col>
                                     </Row>
                                                                 
                                 </Container>

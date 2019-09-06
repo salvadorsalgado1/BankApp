@@ -18,15 +18,11 @@ const textFlex = {
  justifyContent:"center",
  alignItems:"center"
 }
-const buttonStyle = {
- 
+
+const listGroupStyle = {
+    border:"2px rgb(211,211,211) solid"
 }
-const containerStyle = {
 
-
-
-
-}
 const ImageSize = {
 height:"10rem",
 width:"auto"
@@ -70,7 +66,7 @@ function Transactions()
    
 
 
-            <Container className = "ContainerMain" style = {containerStyle}>
+            <Container className = "ContainerMain" >
                 <Row>
                     <Col xs = "12">
                         <Card style = {cardShadow}>
@@ -111,7 +107,7 @@ function Transactions()
                                              
  
                                               
-                                                <ListGroup className = "scrollClass">
+                                                <ListGroup className = "scrollClass" style = {listGroupStyle}>
 {/*use of ids */}
                                                 <ListGroupItem>
                                                 <h4 className = "lead">Type:&nbsp;Gas Transaction:&nbsp;Transfer from Checking to Savings{/*javascript name goes here */}</h4>                                                  
@@ -156,7 +152,9 @@ function Transactions()
             
                                          <Col className = "ButtonsStyle" xs = "12" sm = "12" md = "12" lg = "12" xlg = "12">  
                                          <Link to = "balance" component = {Balance}>
-                                         <Button size="lg" style = {buttonStyle} variant = "primary">Home</Button>
+                                         <br />  
+                                         <br />  
+                                         <Button  className = "btn-block" size="lg"  variant = "primary">Home</Button>
                                         </Link>                                  
                                         
                                         

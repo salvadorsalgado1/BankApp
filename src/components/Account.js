@@ -21,8 +21,7 @@ const containerStyle = {
 
 }
 const ImageSize = {
-  height:"10em",
-  width:"auto"
+width:"15rem"
 }
 
 const textColor = {
@@ -36,11 +35,12 @@ const textSize = {
     fontSize : "1rem"
 }
 const textSizeAccount = {
-    fontSize:"2vw",
+    fontSize:"1.4rem",
     
 }
 const containerSize = {
-    height:"2vw"
+    height:"100%"
+    
 }
 
 
@@ -59,11 +59,10 @@ function Account()
    
    <NavbarPage/>
 
-
             <Container style={containerSize}>
                 <Row>
                     <Col xs = "12">
-                        <Card >
+                        <Card style = {ContainerMain}>
                             <Card.Body >
                                 <Container >
                                     <Row>
@@ -73,10 +72,10 @@ function Account()
                                             
                                             <br/>
                                             <br/>
-                                            <Button variant = "primary">Change Picture</Button>
-                                            
-                                           
-                                           
+
+                                            <Button variant = "primary" size  = "lg">Change Picture</Button>
+                                            <br/>
+                                            <br/>
                                            
                                             </Col>
                                           
