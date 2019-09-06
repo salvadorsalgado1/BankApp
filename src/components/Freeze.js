@@ -2,6 +2,9 @@ import React from 'react'
 import {Badge, Button, Card, CardBody, Container, Image, Input, Navbar, NavbarBrand, Row, Col, ListGroup, ListGroupItem} from 'react-bootstrap';
 import Profile from '../components/Profile';
 import profileImage from '../images/profilepicture.png';
+import Balance from './Balance';
+import {Link, Router} from "react-router-dom";
+import NavbarPage from './NavbarPage';
 
 const cardStyle = {
   
@@ -58,19 +61,9 @@ let accountStatus = "checked";
 function Freeze()
 {
     return(
-        <div className = "Balance">
-<div className = "navbar">
- <NavbarBrand>
-        <a classname = "lead" style = {textSize} href = "/">PathWays Banking,  <p style = {textSize} className = "lead">Member since {yearJoin}</p></a>
-        
-    </NavbarBrand>
-<div className = "navbar-nav">
-     <Button variant = "dark">Sign Out</Button>
-    
-    
-    </div>
+        <div className = "Freeze">
+            <NavbarPage/>
 
-</div>
    
             <Container className = "ContainerMain">
                 <Row>
@@ -89,12 +82,7 @@ function Freeze()
                                                     Call this number 1-800-876-9083 for any questions regarding your account. 
                                                 </p>
                                                
-                                                
-                                                    
-                                                
-                                                
-                                            
-                                               
+                                             
 
                                                 </div>
                                            
@@ -121,9 +109,11 @@ function Freeze()
                                    
                                         
                                     <Col className = "ButtonsStyle" xs = "12" sm = "12" md = "12" lg = "12" xlg = "12">
-                                               
+                                               <Link to = "balance" component = {Balance}>
+                                               <Button  size="lg"style = {textSizeFreezeInfo} variant = "primary">Home</Button>
+                                               </Link>
 
-                                                <Button  size="lg"style = {textSizeFreezeInfo} variant = "primary">Home</Button>
+                                                
                                     </Col>
                                        
                                     </Row>

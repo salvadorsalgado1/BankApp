@@ -9,6 +9,7 @@ import {Form, FormGroup, FormLabel, InputGroup, FormControl,
 
 import logo from '../images/logo.png';
 import ViewB from './ViewB';
+import Balance from './Balance';
 
 
 /*
@@ -86,6 +87,7 @@ const cardContainer = {
 
 
 
+
 function Login()
 {
   
@@ -93,18 +95,9 @@ function Login()
     return(
 
 
-        <div className = "Login">
+        
 
-            
-
-
-        
-      
-        
-        
-        
-        
-       
+           
        
         <div className = "Login" >
 
@@ -148,7 +141,14 @@ function Login()
                                         <Container>
                                             <Row>
                                                 <Col>
-                                                 <Button  block variant = "outline-primary">Login</Button>
+
+
+
+                                                <Link to = "/balance" component = {Balance}>
+
+                                                    <Button  block variant = "outline-primary">Login</Button>
+                                                </Link>
+                                                 
                                                 </Col>
                                             </Row>
                                         </Container>
@@ -237,7 +237,11 @@ function Login()
                                             <Container>
                                                 <Row>
                                                     <Col>
-                                                        <Button block variant = "outline-primary">Create Account</Button>
+                                                    <Link to = "balance" component = {Balance}>
+
+                                                    <Button block variant = "outline-primary">Create Account</Button>
+                                                    </Link>
+                                                        
                                                     </Col>
                                                 </Row>
                                             </Container>
@@ -257,7 +261,7 @@ function Login()
         
      </div>
 
-        </div>
+       
 
          
     );

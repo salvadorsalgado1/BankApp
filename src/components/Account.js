@@ -1,8 +1,10 @@
 import React from 'react'
 import {Badge, Button, Card, CardBody, Container, Image, Navbar, NavbarBrand, Row, Col, ListGroup, ListGroupItem} from 'react-bootstrap';
 import Profile from '../components/Profile';
+import {Router, Link} from 'react-router-dom';
 import profileImage from '../images/profilepicture.png';
-
+import Balance from './Balance';
+import NavbarPage from './NavbarPage';
 
 const textFlex = {
     display:"flex",
@@ -51,37 +53,11 @@ let yearJoin = 2015;
 function Account()
 {
     return(
-        <div className = "Balance">
-<div className = "navbar">
+        <div className = "Account">
 
-    
- <NavbarBrand>
-        <a classname = "lead" style = {textColor} href = "/">PathWays Banking,<p style = {textSize} className = "lead">Member since {yearJoin}</p></a>
-        
-    </NavbarBrand>
-<div className = "navbar-nav">
-<Container>
-    <Row>
-          <Col>
-          <Button  variant = "info">Home</Button>
-        </Col>
-        
-        <Col>
-        <Button  variant = "dark">Sign Out</Button>
-        
-        </Col>
-      
 
-    </Row>
-</Container>
-     
-     
-    
-    </div>
-
-</div>
    
-   
+   <NavbarPage/>
 
 
             <Container style={containerSize}>

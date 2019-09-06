@@ -2,6 +2,12 @@ import React from 'react'
 import {Badge, Button, Card, CardBody, Container, Image, Navbar, NavbarBrand, Row, Col, ListGroup, ListGroupItem} from 'react-bootstrap';
 import Profile from '../components/Profile';
 import profileImage from '../images/profilepicture.png';
+import Transactions from './Transactions';
+import Freeze from './Freeze';
+import Account from './Account';
+import Transfer from './Transfer';
+import NavbarPage from './NavbarPage';
+import {Router, Route, BrowserRouter, Link, HashRouter} from "react-router-dom";
 
 
 const textFlex = {
@@ -46,22 +52,11 @@ function Balance()
 {
     return(
         <div className = "Balance">
-<div className = "navbar">
- <NavbarBrand>
-        <a classname = "lead" style = {textColor} href = "/">PathWays Banking,  <p style = {textSize} className = "lead">Member since {yearJoin}</p></a>
-        
-    </NavbarBrand>
-<div className = "navbar-nav">
-     <Button variant = "dark">Sign Out</Button>
-    
-    
-    </div>
 
-</div>
    
    
 
-
+<NavbarPage/>
             <Container className = "ContainerMain">
                 <Row>
                     <Col xs = "12">
@@ -109,20 +104,33 @@ function Balance()
                                        
 
                                         <Col className = "ButtonsStyle" xs = "12" sm = "12" md = "6" lg = "6" xlg = "6">
-                                        <Button  size="lg" style = {buttonStyle} variant = "primary">Transfer</Button>                                      
+                                            <Link to = "transfer" component = {Transfer}>
+                                            <Button  size="lg" style = {buttonStyle} variant = "primary">Transfer</Button>                                      
+                                            </Link>
+                                      
                                         </Col>
 
   
                                         <Col className = "ButtonsStyle" xs = "12" sm = "12" md = "6" lg = "6" xlg = "6">
-                                        <Button  size="lg" style = {buttonStyle} variant = "primary">Account</Button>
+                                            <Link to = "account" component = {Account}>
+                                            <Button  size="lg" style = {buttonStyle} variant = "primary">Account</Button>
+                                            </Link>
+                                        
                                         </Col>
 
                                         <Col className = "ButtonsStyle" xs = "12" sm = "12" md = "6" lg = "6" xlg = "6">
-                                        <Button  size="lg" style = {buttonStyle} variant = "info">Freeze</Button>
+                                            <Link to = "freeze" component = {Freeze}>
+                                            <Button  size="lg" style = {buttonStyle} variant = "info">Freeze</Button>
+                                            </Link>
+                                       
                                         </Col>
 
                                         <Col className = "ButtonsStyle" xs = "12" sm = "12" md = "6" lg = "6" xlg = "6">
+
+                                        <Link to = "transactions" component = {Transactions}>
                                         <Button href = "/Transfer" size="lg" style = {buttonStyle} variant = "primary">Transactions</Button>
+                                        </Link>
+                                       
                                         </Col>
                                         
                                     </Row>

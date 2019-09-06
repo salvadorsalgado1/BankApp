@@ -3,6 +3,9 @@ import {Badge, Button, Card, CardBody, Container, Image, Navbar, NavbarBrand, Ro
 import Profile from '../components/Profile';
 import profileImage from '../images/profilepicture.png';
 import {Scrollbar} from "react";
+import {Router, Link} from 'react-router-dom';
+import Balance from './Balance';
+import NavbarPage from './NavbarPage';
 
 const cardStyle = {
   
@@ -62,16 +65,7 @@ function Transactions()
 
 
 
-        <div className = "navbar">
-                <NavbarBrand>
-                    <a classname = "lead" style = {textColor} href = "/">PathWays Banking,  <p style = {textSize} className = "lead">Member since {yearJoin}</p></a>
-                        
-                </NavbarBrand>
-                    <div className = "navbar-nav">
-                    <Button variant = "dark">Sign Out</Button>
-                        
-                    </div>
-        </div>
+       <NavbarPage/>
    
    
 
@@ -160,8 +154,11 @@ function Transactions()
                                        </Container>
 
             
-                                         <Col className = "ButtonsStyle" xs = "12" sm = "12" md = "12" lg = "12" xlg = "12">                                    
-                                        <Button size="lg" style = {buttonStyle} variant = "primary">Home</Button>
+                                         <Col className = "ButtonsStyle" xs = "12" sm = "12" md = "12" lg = "12" xlg = "12">  
+                                         <Link to = "balance" component = {Balance}>
+                                         <Button size="lg" style = {buttonStyle} variant = "primary">Home</Button>
+                                        </Link>                                  
+                                        
                                         
                                         </Col>
                                     </Row>

@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+
 import Main from './components/Main';
 import JumboTron from './components/JumboTron';
 import Keypad from './components/Keypad';
@@ -14,7 +15,7 @@ import Freeze from './components/Freeze';
 import Signout from './components/Signout';
 import Transfer from './components/Transfer';
 import Account from './components/Account';
-import {Router, Route, BrowserRouter, Link} from "react-router-dom";
+import {Router, Route, BrowserRouter, Link, HashRouter} from "react-router-dom";
 
 
 
@@ -28,7 +29,7 @@ function App() {
       
     {/*
     <Balance/>
-
+    <Main/>
     <Account/>
     <Transactions/>
     <Freeze/>
@@ -38,7 +39,21 @@ function App() {
   
     */}
   
-    <Main/>
+  
+  
+<HashRouter>
+      <Route path = {"/login"} component = {Login}></Route>
+       <Route path = {"/balance"} component = {Balance}></Route>
+       <Route path = {"/transfer"} component = {Transfer}></Route>
+          <Route path = {"/account"} component = {Account}></Route>
+          <Route path = {"/freeze"} component = {Freeze}></Route>
+          <Route path = {"/transactions"} component = {Transactions}></Route>
+     
+  </HashRouter>
+  
+
+
+
 
     </div>
 

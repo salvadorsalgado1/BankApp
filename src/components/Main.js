@@ -6,7 +6,9 @@ import Freeze from './Freeze';
 import Signout from './Signout';
 import Transfer from './Transfer';
 import Account from './Account';
+import NavbarPage from './NavbarPage';
 
+import {Router, Route, Link, HashRouter} from "react-router-dom";
 
 
 
@@ -15,15 +17,21 @@ import Account from './Account';
 
 export class Main extends Component{
 
-state = {
-   step:4
-}
 
+  
+/*state = {
+   step:2
+} */
+
+ 
 
 
   render(){
 
-const {step} = this.state;
+
+/*const {step} = this.state; */
+
+   
       
     /* 
     
@@ -38,10 +46,7 @@ const {step} = this.state;
    
     <Signout/> case 7
     
-   
-  
-    */
-       switch(step){
+    switch(step){
            case 1:
                return(
                       <div>
@@ -89,6 +94,26 @@ const {step} = this.state;
 
               default: return(<h1>d</h1>)
        }
+
+  
+    */
+
+
+    
+      
+
+return(
+<div>
+  <NavbarPage/>
+
+</div>
+  
+  
+  
+
+ 
+)
+
        
   }
 }
