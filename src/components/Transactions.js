@@ -20,7 +20,8 @@ const textFlex = {
 }
 
 const listGroupStyle = {
-    border:"2px rgb(211,211,211) solid"
+    border:"2px rgb(211,211,211) solid",
+   
 }
 
 const ImageSize = {
@@ -72,72 +73,47 @@ function Transactions()
                         <Card style = {cardShadow}>
                             <Card.Body>
                                 <Container>
-                                    <Row>
-                                        
-                                            <Col>
-                                            <Image  style = {ImageSize} src = {profileImage}></Image>
-                                            <br/>
-                                            <br/>
-                                            
-                                            <h3 className = "lead">Welcome Back, Salvador! {/*javascript name goes here */}</h3>
-                                           
-                                           
-                                            </Col>
-                                        
-                                            <Col >
-                                            <h4 className = "lead">Accounts</h4>
-                                            <ListGroup>
-                                                <ListGroupItem>
-                                                <h4 className = "lead">Checking:&nbsp; $&nbsp;{checkingAmt}{/*javascript name goes here */}</h4>                                                  
-                                                </ListGroupItem>
-                                                <ListGroupItem>
-                                                <h4 className = "lead">Savings:&nbsp; $&nbsp;{savingsAmt}{/*javascript name goes here */}</h4>
-                                                </ListGroupItem>
-                                                <ListGroupItem>
-                                                <h4 className = "lead">Credit:&nbsp; $&nbsp;{creditAmt}{/*javascript name goes here */}</h4>
-                                                </ListGroupItem>
-                                            </ListGroup>
-                                            </Col>
-                                    </Row>
+                                  
+                                   
 
                                     <Row>
 
                                        <Container>
-                                          
+                                          <p className = "lead">Transaction History</p>
                                              
  
                                               
                                                 <ListGroup className = "scrollClass" style = {listGroupStyle}>
 {/*use of ids */}
                                                 <ListGroupItem>
-                                                <h4 className = "lead">Type:&nbsp;Gas Transaction:&nbsp;Transfer from Checking to Savings{/*javascript name goes here */}</h4>                                                  
+                                                <h5 style = {textSize} className = "lead">Type:&nbsp;Gas Transaction:&nbsp;Transfer from Checking to Savings{/*javascript name goes here */}</h5>                                                  
                                                 </ListGroupItem>
                                                 <ListGroupItem>
-                                                <h4 className = "lead">Type:&nbsp;Gas Transaction:&nbsp;Transfer from Checking to Savings{/*javascript name goes here */}</h4>                                                  
+                                                <h5 style = {textSize}className = "lead">Type:&nbsp;Gas Transaction:&nbsp;Transfer from Checking to Savings{/*javascript name goes here */}</h5>                                                  
                                                 </ListGroupItem>
                                                 <ListGroupItem>
-                                                <h4 className = "lead">Type:&nbsp;Gas Transaction:&nbsp;Transfer from Checking to Savings{/*javascript name goes here */}</h4>                                                  
+                                                <h5 style = {textSize}className = "lead">Type:&nbsp;Gas Transaction:&nbsp;Transfer from Checking to Savings{/*javascript name goes here */}</h5>                                                  
                                                 </ListGroupItem>
                                                 <ListGroupItem>
-                                                <h4 className = "lead">Type:&nbsp;Gas Transaction:&nbsp;Transfer from Checking to Savings{/*javascript name goes here */}</h4>                                                  
+                                                <h5 style = {textSize}className = "lead">Type:&nbsp;Gas Transaction:&nbsp;Transfer from Checking to Savings{/*javascript name goes here */}</h5>                                                  
                                                 </ListGroupItem>
                                                 <ListGroupItem>
-                                                <h4 className = "lead">Type:&nbsp;Gas Transaction:&nbsp;Transfer from Checking to Savings{/*javascript name goes here */}</h4>                                                  
+                                                <h5 style = {textSize}className = "lead">Type:&nbsp;Gas Transaction:&nbsp;Transfer from Checking to Savings{/*javascript name goes here */}</h5>                                                  
                                                 </ListGroupItem>
                                                 <ListGroupItem>
-                                                <h4 className = "lead">Type:&nbsp;Gas Transaction:&nbsp;Transfer from Checking to Savings{/*javascript name goes here */}</h4>                                                  
+                                                <h5 style = {textSize}className = "lead">Type:&nbsp;Gas Transaction:&nbsp;Transfer from Checking to Savings{/*javascript name goes here */}</h5>                                                  
                                                 </ListGroupItem>
                                                 <ListGroupItem>
-                                                <h4 className = "lead">Type:&nbsp;Gas Transaction:&nbsp;Transfer from Checking to Savings{/*javascript name goes here */}</h4>                                                  
+                                                <h5 style = {textSize}className = "lead">Type:&nbsp;Gas Transaction:&nbsp;Transfer from Checking to Savings{/*javascript name goes here */}</h5>                                                  
                                                 </ListGroupItem>
                                                 <ListGroupItem>
-                                                <h4 className = "lead">Type:&nbsp;Gas Transaction:&nbsp;Transfer from Checking to Savings{/*javascript name goes here */}</h4>                                                  
+                                                <h5 style = {textSize}className = "lead">Type:&nbsp;Gas Transaction:&nbsp;Transfer from Checking to Savings{/*javascript name goes here */}</h5>                                                  
                                                 </ListGroupItem>
                                                 <ListGroupItem>
-                                                <h4 className = "lead">Type:&nbsp;Gas Transaction:&nbsp;Transfer from Checking to Savings{/*javascript name goes here */}</h4>                                                  
+                                                <h5 style = {textSize}className = "lead">Type:&nbsp;Gas Transaction:&nbsp;Transfer from Checking to Savings{/*javascript name goes here */}</h5>                                                  
                                                 </ListGroupItem>
                                                 <ListGroupItem>
-                                                <h4 className = "lead">Type:&nbsp;Gas Transaction:&nbsp;Transfer from Checking to Savings{/*javascript name goes here */}</h4>                                                  
+                                                <h5  style = {textSize}className = "lead">Type:&nbsp;Gas Transaction:&nbsp;Transfer from Checking to Savings{/*javascript name goes here */}</h5>                                                  
                                                 </ListGroupItem>
 
                                                 </ListGroup>
@@ -150,15 +126,7 @@ function Transactions()
                                        </Container>
 
             
-                                         <Col className = "ButtonsStyle" xs = "12" sm = "12" md = "12" lg = "12" xlg = "12">  
-                                         <Link to = "balance" component = {Balance}>
-                                         <br />  
-                                         <br />  
-                                         <Button  className = "btn-block" size="lg"  variant = "primary">Home</Button>
-                                        </Link>                                  
-                                        
-                                        
-                                        </Col>
+                                      
                                     </Row>
 
 

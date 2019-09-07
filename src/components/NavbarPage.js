@@ -12,7 +12,7 @@ color:"white"
 }
 
 const textSize = {
-fontSize : "1rem"
+fontSize : ".75rem"
 }
 let yearJoin = 2015;
 

@@ -6,36 +6,20 @@ import profileImage from '../images/profilepicture.png';
 import Balance from './Balance';
 import NavbarPage from './NavbarPage';
 
-const textFlex = {
-    display:"flex",
-    flexDirection:"column",
-    justifyContent:"center",
-    alignItems:"center"
-}
-const buttonStyle = {
-    
-}
-const containerStyle = {
 
-
-
-}
 const ImageSize = {
-width:"10rem"
+width:"8rem"
 }
 
-const textColor = {
-    color:"white"
-}
+
 const ContainerMain = {
    
-    boxShadow:"5px 5px 5px 5px"
+    boxShadow:"5px 5px 5px 5px",
+  
 }
-const textSize = {
-    fontSize : "1rem"
-}
+
 const textSizeAccount = {
-    fontSize:"1.2rem",
+    fontSize:"1rem",
     
 }
 const containerSize = {
@@ -44,11 +28,6 @@ const containerSize = {
 }
 
 
-let checkingAmt = 400;
-let savingsAmt = 3423.23;
-let creditAmt = 223.33;
-let notificationsAmt = 11;
-let yearJoin = 2015;
 
 function Account()
 {
@@ -61,7 +40,7 @@ function Account()
 
             <Container style={containerSize}>
                 <Row>
-                    <Col xs = "12">
+                    <Col>
                         <Card style = {ContainerMain}>
                             <Card.Body >
                                 <Container >
@@ -82,6 +61,8 @@ function Account()
                                         
                                             <Col>
                                             <h4 style = {textSizeAccount} className = "lead">Account Information</h4>
+
+
                                             <ListGroup className = "text-left">
                                                 <ListGroupItem>
                                                          <p style = {textSizeAccount} className = "lead"><strong>First Name:</strong>&nbsp;Salvador</p>                                        
@@ -90,11 +71,9 @@ function Account()
                                                          <p style = {textSizeAccount}className = "lead"><strong>Last Name:</strong>&nbsp;Salgado</p>                                        
                                                 </ListGroupItem>
                                                 <ListGroupItem>
-                                                         <p style = {textSizeAccount}className = "lead"><strong>City:</strong>&nbsp;Springfield</p>                                        
+                                                         <p style = {textSizeAccount}className = "lead"><strong>Address:</strong>&nbsp;231 Springfield Way</p>                                        
                                                 </ListGroupItem>
-                                                <ListGroupItem>
-                                                         <p style = {textSizeAccount}className = "lead"><strong>State:</strong>&nbsp;Ohio</p>                                        
-                                                </ListGroupItem>
+                                              
                                                 <ListGroupItem>
                                                          <p style = {textSizeAccount}className = "lead"><strong>Email:</strong>&nbsp;sal123@gmail.com</p>                                        
                                                 </ListGroupItem>
