@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/BankApp/static/css/main.b961f871.chunk.css",
+    "main.css": "/BankApp/static/css/main.2e9e5dd2.chunk.css",
     "main.js": "/BankApp/static/js/main.b0517d4c.chunk.js",
     "main.js.map": "/BankApp/static/js/main.b0517d4c.chunk.js.map",
     "runtime~main.js": "/BankApp/static/js/runtime~main.15e18c27.js",
@@ -9,14 +9,14 @@
     "static/js/2.826ea004.chunk.js": "/BankApp/static/js/2.826ea004.chunk.js",
     "static/js/2.826ea004.chunk.js.map": "/BankApp/static/js/2.826ea004.chunk.js.map",
     "index.html": "/BankApp/index.html",
-    "precache-manifest.788e96aea7cd0897d5f974b8b357539a.js": "/BankApp/precache-manifest.788e96aea7cd0897d5f974b8b357539a.js",
+    "precache-manifest.62b000c9ea75274c44c91ff6d71af212.js": "/BankApp/precache-manifest.62b000c9ea75274c44c91ff6d71af212.js",
     "service-worker.js": "/BankApp/service-worker.js",
     "static/css/2.22a7d4ef.chunk.css.map": "/BankApp/static/css/2.22a7d4ef.chunk.css.map",
-    "static/css/main.b961f871.chunk.css.map": "/BankApp/static/css/main.b961f871.chunk.css.map",
+    "static/css/main.2e9e5dd2.chunk.css.map": "/BankApp/static/css/main.2e9e5dd2.chunk.css.map",
     "static/media/Landscape.jpg": "/BankApp/static/media/Landscape.c81b225e.jpg",
-    "static/media/index.css": "/BankApp/static/media/NightCity.fc49ed01.jpg",
     "static/media/logo.png": "/BankApp/static/media/logo.0141435b.png",
     "static/media/logo.svg": "/BankApp/static/media/logo.5d5d9eef.svg",
+    "static/media/index.css": "/BankApp/static/media/nightcitycomp.fc49ed01.jpg",
     "static/media/profilepicture.png": "/BankApp/static/media/profilepicture.b6681619.png"
   }
 }

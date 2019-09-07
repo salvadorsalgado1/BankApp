@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ee4f3e6912d12097cb54be7c1266e3f6",
+    "revision": "61a5c14cdea378ca8efacc523a74ef1e",
     "url": "/BankApp/index.html"
   },
   {
@@ -8,15 +8,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/BankApp/static/css/2.22a7d4ef.chunk.css"
   },
   {
-    "revision": "4636c12c27e47a71cb32",
-    "url": "/BankApp/static/css/main.b961f871.chunk.css"
+    "revision": "29ee67f6e3d152c7af0e",
+    "url": "/BankApp/static/css/main.2e9e5dd2.chunk.css"
   },
   {
     "revision": "ca1828c8ea0767ece916",
     "url": "/BankApp/static/js/2.826ea004.chunk.js"
   },
   {
-    "revision": "4636c12c27e47a71cb32",
+    "revision": "29ee67f6e3d152c7af0e",
     "url": "/BankApp/static/js/main.b0517d4c.chunk.js"
   },
   {
@@ -28,16 +28,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/BankApp/static/media/Landscape.c81b225e.jpg"
   },
   {
-    "revision": "fc49ed0102e9c8d3d86737cbaa32e451",
-    "url": "/BankApp/static/media/NightCity.fc49ed01.jpg"
-  },
-  {
     "revision": "0141435ba299cada74914bdfad21cad5",
     "url": "/BankApp/static/media/logo.0141435b.png"
   },
   {
     "revision": "5d5d9eefa31e5e13a6610d9fa7a283bb",
     "url": "/BankApp/static/media/logo.5d5d9eef.svg"
+  },
+  {
+    "revision": "fc49ed0102e9c8d3d86737cbaa32e451",
+    "url": "/BankApp/static/media/nightcitycomp.fc49ed01.jpg"
   },
   {
     "revision": "b6681619dcc616623083589aa826d2be",
