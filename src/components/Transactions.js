@@ -63,9 +63,6 @@ function Transactions()
 
 
        <NavbarPage/>
-   
-   
-
 
             <Container className = "ContainerMain" >
                 <Row>
