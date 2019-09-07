@@ -70,9 +70,7 @@ function Transactions()
                         <Card style = {cardShadow}>
                             <Card.Body>
                                 <Container>
-                                  
-                                   
-
+                                 
                                     <Row>
 
                                        <Container>
