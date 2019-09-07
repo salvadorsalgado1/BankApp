@@ -106,7 +106,8 @@ function Balance()
                                             </Link>
                                         
                                         </Col>
-
+                                        </Row>
+                                        <Row>
                                         <Col className = "ButtonsStyle" xs = "12" sm = "12" md = "6" lg = "6" xlg = "6">
                                             <Link to = "freeze" component = {Freeze}>
                                             <Button  className = "btn-block" size="lg" style = {buttonStyle} variant = "info">Freeze</Button>
@@ -121,8 +122,8 @@ function Balance()
                                         </Link>
                                        
                                         </Col>
-
-                                    </Row>
+                                        </Row>
+                                    
                                 </Container>
                             </Card.Body>
                         </Card>

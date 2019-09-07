@@ -40,7 +40,7 @@ const textSize = {
     fontSize : "1rem"
 }
 const containerSize = {
-    height:"2vw"
+    height:"100%"
 }
 
 let checkingAmt = 400;
@@ -68,22 +68,22 @@ function Transfer()
                                     <Row>
                                         
                                             <Col>
-                                                <h4 className = "lead">Accounts</h4>
+                                                <p className = "lead" style = {textSize}>Accounts</p>
                                                 <ListGroup>
                                                 <ListGroupItem>
-                                                <h4 className = "lead">Checking:&nbsp; $&nbsp;{checkingAmt}{/*javascript name goes here */}</h4>                                                  
+                                                <p className = "lead"  style = {textSize}>Checking:&nbsp; $&nbsp;{checkingAmt}{/*javascript name goes here */}</p>                                                  
                                                 </ListGroupItem>
                                                 <ListGroupItem>
-                                                <h4 className = "lead">Savings:&nbsp; $&nbsp;{savingsAmt}{/*javascript name goes here */}</h4>
+                                                <p className = "lead"style = {textSize}>Savings:&nbsp; $&nbsp;{savingsAmt}{/*javascript name goes here */}</p>
                                                 </ListGroupItem>
                                                 <ListGroupItem>
-                                                <h4 className = "lead">Credit:&nbsp; $&nbsp;{creditAmt}{/*javascript name goes here */}</h4>
+                                                <p className = "lead"style = {textSize}>Credit:&nbsp; $&nbsp;{creditAmt}{/*javascript name goes here */}</p>
                                                 </ListGroupItem>
-                                                <div className = "lead">
+                                               
                                            
                                                 <br/>
 
-                                                </div>
+                                            
                                                 </ListGroup>
                                             </Col>
 
@@ -97,9 +97,9 @@ function Transfer()
                                                             <Row>                                                   
                                                                 <Col>                                                    
                                                                     <select id = "inputState" class = "form-control">
-                                                                        <option>Checking</option>
-                                                                        <option>Savings</option>
-                                                                        <option>Credit</option>
+                                                                        <option className = "lead">Checking</option>
+                                                                        <option className = "lead">Savings</option>
+                                                                        <option className = "lead">Credit</option>
                                                                     </select> 
                                                            
                                                                     <Form.Control type = "email" placeholder = "Amount" />                                              
@@ -109,16 +109,16 @@ function Transfer()
 
                                                                 <Row>
                                                                     <Col>
-                                                                    <label>Transfer To:</label>
+                                                                    <label className = "lead">Transfer To:</label>
                                                                     </Col>
                                                                 </Row>
                                                                         
                                                                 <Row>
                                                                     <Col>
                                                                           <select id = "inputState" class = "form-control">
-                                                                            <option>Checking</option>
-                                                                            <option>Savings</option>
-                                                                            <option>Credit</option>
+                                                                          <option className = "lead">Checking</option>
+                                                                        <option className = "lead">Savings</option>
+                                                                        <option className = "lead">Credit</option>
                                                                         </select> 
                                                                     </Col> 
                                                                 </Row>

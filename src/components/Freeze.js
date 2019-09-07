@@ -109,13 +109,7 @@ function Freeze()
                                     </Col>
                                    
                                         
-                                    <Col className = "ButtonsStyle" xs = "12" sm = "12" md = "12" lg = "12" xlg = "12">
-                                               <Link to = "balance" component = {Balance}>
-                                               <Button  size="lg"style = {textSizeFreezeInfo} variant = "primary">Home</Button>
-                                               </Link>
-
-                                                
-                                    </Col>
+                                  
                                        
                                     </Row>
                                 </Container>

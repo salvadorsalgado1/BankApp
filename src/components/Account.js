@@ -21,7 +21,7 @@ const containerStyle = {
 
 }
 const ImageSize = {
-width:"15rem"
+width:"10rem"
 }
 
 const textColor = {
@@ -35,7 +35,7 @@ const textSize = {
     fontSize : "1rem"
 }
 const textSizeAccount = {
-    fontSize:"1.4rem",
+    fontSize:"1.2rem",
     
 }
 const containerSize = {
